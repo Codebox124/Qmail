@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/erro.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Questmail</title>
+
+</head>
+<body class="bg-primary flex flex-col ">
+
+
+
+
+    <header class="bg-secondary-100 py-4 px-3 shadow-lg w-full fixed top-0 z-10 ">
+        
+        <nav class=" w-full relative">
+
+            <div class="grid grid-cols-4">
+                    <!-- logo  -->
+                    <div class="col-start-1 col-end-2  ">
+                        <h2 class="text-2xl font-bold px-3">Questmail</h2>
+                       
+                    </div>
+
+                    <!-- Side Image on mobile -->
+                    <div class=" col-start-2 col-end-5 grid grid-cols-2 mr-2 md:mr-10 ">
+                         
+                              <div class="lg:flex hidden lg:col-start-1 lg:col-end-4">
+                                <div class="mobile_btn pr-2 hidden " >
+                                    <iconify-icon icon="ci:hamburger" class="text-2xl text-gray-400"></iconify-icon>
+                                 </div>
+        
+                                <div class=" hidden lg:block ">
+                                  <input type="search " class="border hidden lg:block  outline-none pr-10 pl-3 h-14 w-full" placeholder="Search mail">
+                                </div>
+        
+
+                              </div>
+                                   <!-- Side Image on mobile -->
+                            <div class="col-start-1 col-end-7 lg:col-start-4 lg:col-end-7  flex justify-end -ml-10 lg:-ml-0  ">
+                                <!-- notification icon -->
+                                    <div class="pr-4 self-center relative">
+                                    <iconify-icon icon="ci:dot-01-xs" rotate="270deg" class="absolute top-4 left-0 text-3xl text-blue-800"></iconify-icon>
+                                        <iconify-icon icon="bx:bell" class="text-3xl mt-4"></iconify-icon>
+                                    </div>
+
+                                    <div class=" self-end ">
+                                        <img class="w-10" src="./img/face28.jpg" alt="Questmail-logo">
+                                    </div>
+
+                                    <div class="mobile_btn_mobile flex justify-center lg:hidden pr-2 ml-3 mt-2" >
+                                         <iconify-icon icon="ci:hamburger" class="text-2xl text-gray-400"></iconify-icon>
+
+                                     </div>
+
+                           </div>
+
+                      </div>
+                
+
+                    <div class=" py-3 px-3  bg-white -z-30 lg:hidden  header_side " >
+                        <ul class="pb-5">
+                            <li class="cursor-pointer  list py-3 list  px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:grid-alt"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link ">All Inboxes</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:loader-circle"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Primary</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:bar-chart-square"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link" class="list_link">Social</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon" > 
+                                    <iconify-icon icon="bx:book-content"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Promotions</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:badge"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Starred</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:bar-chart-alt"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Snoozed</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:table"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Important</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:area"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Sent</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:select-multiple"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Outbox</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:carousel"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Drafts</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:badge-check"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">All mail</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:user"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Spam</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:error-circle"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Trash</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:book-open"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Settings</a>
+                            </li>
+                            <li class="cursor-pointer  list py-3 px-3 flex justify-start rounded-md hover:bg-blue-800 hover:text-white hover:transition-all hover:duration-150 hover:ease-in-out ">
+                                <span class="mr-2 list_icon"> 
+                                    <iconify-icon icon="bx:popsicle"></iconify-icon>
+                                </span>
+                                <a href="#" class="list_link">Help & Feedback</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+            </div>
+            
+        </nav>
+
+    </header>
+
+
+
+    <main class="mt-24 p-5  ">
+      <div class="modal  fixed left-0 top-0 w-full h-full  hidden  overflow-auto bgg  z-10">
+        <div class="modal-content animate relative w-3/4 max-w-4xl bg-white my-4 mx-auto rounded-md">
+            <div class="flex bg-gray-300 py-2 px-5 " >
+
+                <div class="grow">
+                    <h1 class="text-xl font-semibold">New Message</h1>
+
+                </div>
+                <div>
+                    <span class="closes cursor-pointer text-2xl font-semibold">&times;</span>
+
+                </div>
+                
+
+            </div>
+            <div class="px-4 py-2">
+                <form action="">
+                    <input class="w-full py-2 px-2 border-b-2 outline-0 text-xl mb-3 " type="email" placeholder="Recepient">
+                    <input class="w-full py-2 px-2 border-b-2 outline-0 text-xl mb-3 " type="text" placeholder="Subject">
+                    <textarea class="w-full outline-0 mb-3 " name="" id="" cols="30" rows="10" placeholder="Write message...."></textarea>
+                    <button class="bg-blue-700 px-6 py-2 text-white rounded-md">Send</button>
+
+                </form>
+
+
+
+            </div>
+        </div>
+      </div>
+  
+
+        <!-- SECTION FOR ALL TEMPLATE GIVEN  -->
+       <section class="">
+           
+        
+           <div class="max-w-screen-2xl lg:float-right w-full  md:flex md:flex-row bg-white md:p-4 ">
+            <!-- first div -->
+            <div class="w-60 border-r-2 hidden md:block">
+                <div>
+                 <button class="text-white compose-btn py-4 px-7 rounded-3xl compose block">Compose</button>
+                </div>
+               
+            
+               <div class="mt-5 px-2">
+               <a href="">
+                <div class="flex p-2  bg-mail">
+                    <div><iconify-icon icon="akar-icons:envelope" style="color: blue;" width="20" height="20" class="mt-1"></iconify-icon></div>
+                    <div class="flex-grow"><span class=" px-2 text-sm">Inbox</span></div>
+                    <div><iconify-icon icon="bi:8-circle" style="color: #57B657;" width="35" height="25" class="mt-1"></iconify-icon></div>
+                </div>
+               </a>
+
+               <a href="">
+                <div class="flex p-2 hover:bg-blue-200">
+                    <div><iconify-icon icon="bi:send-check-fill" width="20" height="20"></iconify-icon></div>
+                    <div class="flex-grow"><span class=" px-2 text-sm">Sent</span></div>
+                    <div></div>
+                </div>
+               </a>
+
+               <a href="">
+                <div class="flex p-2 hover:bg-blue-200">
+                    <div><iconify-icon icon="carbon:license-draft"  width = "20" height="20" ></iconify-icon></div>
+                    <div class="flex-grow"><span class=" px-2 text-sm">Draft</span></div>
+                    <div><iconify-icon icon="bi:4-circle" style="color: #f7f32c;" width="35" height="25" class="mt-1"></iconify-icon></div>
+                </div>
+               </a>
+
+               <a href="">
+                <div class="flex p-2 hover:bg-blue-200">
+                    <div><iconify-icon icon="quill:outbox" width="20" height="20"></iconify-icon></div>
+                    <div class="flex-grow"><span class=" px-2 text-sm">Outbox</span></div>
+                    <div><iconify-icon icon="bi:3-circle" style="color: #ff864e;" width="35" height="25" class="mt-1"></iconify-icon></div>
+                </div>
+               </a>
+
+               <a href="">
+                <div class="flex p-2 hover:bg-blue-200">
+                    <div><iconify-icon icon="ant-design:star-outlined" width="20" height="20"></iconify-icon></div>
+                    <div class="flex-grow"><span class=" px-2 text-sm">Starred</span></div>
+                    <div></div>
+                </div>
+               </a>
+
+               <a href="">
+                <div class="flex p-2 hover:bg-blue-200">
+                    <div><iconify-icon icon="bi:trash" width="20" height="20"></iconify-icon></div>
+                    <div class="flex-grow"><span class=" px-2 text-sm">Trash</span></div>
+                    <div></div>
+                </div>
+               </a>
+               
+               </div>
+
+               <div class="mt-5 px-2 ">
+                <div class="flex flex-cols-2">
+                    <div class="flex-grow text-blue-900 font-bold"><span>Chats</span></div>
+                    <div><span class="text-xs">online</span></div>
+                </div>
+
+                <div class="mt-3 flex flex-cols-2 border-b-2 py-2">
+                    <div><img src="./img/face11.jpg" alt="" class="w-8 rounded-full mr-3"></div>
+                    <div>
+                        <span class="text-blue-600 ">David</span>
+                        <br>
+                        <span class="text-xs">Python Developer</span>
+                    </div>
+                </div>
+                <div class="mt-3 flex flex-cols-2 border-b-2 py-2">
+                    <div><img src="./img/face12.jpg" alt="" class="w-8 rounded-full mr-3"></div>
+                    <div>
+                        <span class="text-blue-600 ">Tobi</span>
+                        <br>
+                        <span class="text-xs">Backend Developer</span>
+                    </div>
+                </div>
+                <div class="mt-3 flex flex-cols-2 border-b-2 py-2">
+                    <div><img src="./img/face13.jpg" alt="" class="w-8 rounded-full mr-3"></div>
+                    <div>
+                        <span class="text-blue-600 ">Rasheed</span>
+                        <br>
+                        <span class="text-xs">SEO Manager</span>
+                    </div>
+                </div>
+                <div class="mt-3 flex flex-cols-2 border-b-2 py-2">
+                    <div><img src="./img/face13.jpg" alt="" class="w-8 rounded-full mr-3"></div>
+                    <div>
+                        <span class="text-blue-600 ">David</span>
+                        <br>
+                        <span class="text-xs">Blockchain Developer</span>
+                    </div>
+                </div>
+                <div class="mt-3 flex flex-cols-2 border-b-2 py-2">
+                    <div><img src="./img/face13.jpg" alt="" class="w-8 rounded-full mr-3"></div>
+                    <div>
+                        <span class="text-blue-600">Roqeeb</span>
+                        <br>
+                        <span class="text-xs">Fullstack Developer</span>
+                    </div>
+                </div>
+                <div class="mt-3 flex flex-cols-2 border-b-2 py-2">
+                    <div><img src="./img/face13.jpg" alt="" class="w-8 rounded-full mr-3"></div>
+                    <div>
+                        <span class="text-blue-600">Uche</span>
+                        <br>
+                        <span class="text-xs">Devops Engineer</span>
+                    </div>
+                </div>
+                <div class="mt-3 flex flex-cols-2 border-b-2 py-2">
+                    <div><img src="./img/face13.jpg" alt="" class="w-8 rounded-full mr-3"></div>
+                    <div>
+                        <span class="text-blue-600">Bolaji</span>
+                        <br>
+                        <span class="text-xs">Content Manager</span>
+                    </div>
+                </div>
+               </div>
+            
+            </div>
+            <!-- /first -->
+            <!-- second -->
+            <div class="">
+                <div class="p-4"><input class="w-full  h-14 border px-2 text-xl" type="text" placeholder="search"></div>
+                <a href="/public/chats.html">
+                    <div class="border-t-2 flex p-4 bg-mail cursor-pointer">
+                        <div class="place-self-center">
+                            <input type="checkbox" class="default:ring-2 ... h-6 w-6" />
+                        </div>
+                        <div class="flex-grow px-2 ">
+                            <span class="block text-xl">Alx Meetup</span>
+                            <span class="text-sm">This week has been a great week and the team is right on ...</span>
+                        </div>
+                        <div class="place-self-center">
+                            <iconify-icon icon="emojione:star" class="text-xl"></iconify-icon>
+        
+                        </div>
+        
+        
+                    </div>
+                </a>
+                <div class="border-t-2 flex p-4 cursor-pointer">
+                    <div class="place-self-center"><input type="checkbox" class="default:ring-2 ... h-6 w-6" />
+                    </div>
+                    <div class="flex-grow px-2">
+                        <span class="block text-xl">David Moore</span>
+                        <span class="text-sm">Hi, codebox please be informed that the new role is...</span>
+                    </div>
+                    <div class="place-self-center">
+                        <iconify-icon icon="emojione:star" class="text-xl"></iconify-icon>
+    
+                    </div>
+    
+    
+                </div>
+                <div class="border-t-2 flex p-4 cursor-pointer">
+                    <div class="place-self-center"><input type="checkbox" class="default:ring-2 ... h-6 w-6" />
+                    </div>
+                    <div class="flex-grow px-2">
+                        <span class="block text-xl">CEO Figma</span>
+                        <span class="text-sm">Hi, codebox please be informed that the new role is...</span>
+                    </div>
+                    <div class="place-self-center">
+                        <iconify-icon icon="emojione:star" class="text-xl"></iconify-icon>
+    
+                    </div>
+    
+    
+                </div>
+                <div class="border-t-2 flex p-4 cursor-pointer">
+                    <div class="place-self-center"><input type="checkbox" class="default:ring-2 ... h-6 w-6" />
+                    </div>
+                    <div class="flex-grow px-2">
+                        <span class="block text-xl">Microsoft</span>
+                        <span class="text-sm">Hi, codebox please be informed that the new role is...</span>
+                    </div>
+                    <div class="place-self-center">
+                        <iconify-icon icon="emojione:star" class="text-xl"></iconify-icon>
+    
+                    </div>
+    
+    
+                </div>
+                <div class="border-t-2 flex p-4 cursor-pointer">
+                    <div class="place-self-center"><input type="checkbox" class="default:ring-2 ... h-6 w-6" />
+                    </div>
+                    <div class="flex-grow px-2">
+                        <span class="block text-xl">Google Dev</span>
+                        <span class="text-sm">Hi, codebox please be informed that the new role is...</span>
+                    </div>
+                    <div class="place-self-center">
+                        <iconify-icon icon="emojione:star" class="text-xl"></iconify-icon>
+    
+                    </div>
+    
+    
+                </div>
+                <div class="border-t-2 flex p-4 cursor-pointer">
+                    <div class="place-self-center"><input type="checkbox" class="default:ring-2 ... h-6 w-6" />
+                    </div>
+                    <div class="flex-grow px-2">
+                        <span class="block text-xl">David Toba</span>
+                        <span class="text-sm">Hi, Toba please be informed that the new role is...</span>
+                    </div>
+                    <div class="place-self-center">
+                        <iconify-icon icon="emojione:star" class="text-xl"></iconify-icon>
+    
+                    </div>
+    
+    
+                </div>
+                <div class="border-t-2 flex p-4 cursor-pointer">
+                    <div class="place-self-center"><input type="checkbox" class="default:ring-2 ... h-6 w-6" />
+                    </div>
+                    <div class="flex-grow px-2">
+                        <span class="block text-xl">Elisha David</span>
+                        <span class="text-sm">How are u doing guy..</span>
+                    </div>
+                    <div class="place-self-center">
+                        <iconify-icon icon="emojione:star" class="text-xl"></iconify-icon>
+    
+                    </div>
+    
+    
+                </div>
+               
+            </div>
+            <!-- /second -->
+            <!-- third -->
+            <div class="md:flex-grow  hidden md:block p-4">
+                <div class="flex">
+                    <div class="border grid grid-cols-3 rounded-full self-center">
+                        <div class="p-2 "><span>Reply</span></div>
+                        <div class="p-2 border-x"><span >Reply All</span></div>
+                        <div class="p-2"><span> Foward</span></div>
+                    </div>
+                    <div class="border mx-2 grid grid-cols-2 rounded-full self-center">
+                        <div class="p-2 border-r"><span>Attach</span></div>
+                       
+                        <div class="p-2 "><span><iconify-icon class="" icon="bi:trash" width="16" height="16"></iconify-icon>Delete</div></span></div>
+                       
+                    </div>
+
+                    <div class="mt-6 border-b-2 py-4 flex">
+                        <div class="px-4"><img src="./assets/img/face9.jpg" alt="" class="w-14 rounded-full"></div>
+                        <div>
+                            <span class="font-bold">Weekly Update - Week 19 (May 8, 2017 - May 14, 2017)</span><br>
+                            <span class="mt-3">Sarah Graves <a href="#" class="px-2 text-blue-700">itsmesarah268@gmail.com</a>  </span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="p-8 border-b">
+                        <span>
+                            Hi Emily,
+<br>
+<br>
+                                This week has been a great week and the team is right on schedule with the<br> set deadline. The team has made great progress and achievements this week.<br> At the current rate we will be able to deliver the product right on time and meet  of us.<br> Attached are the seminar report held  this week by our team and the final product design that <br> needs your approval at the earliest.<br>
+                                <br>
+                                or the coming week the highest priority is given to the development <br>for<a href="" class="text-blue-700"> http://www.questgig.com/ </a> the design is approved and necessary<br> improvements are made.
+
+<br>
+<br>
+<br>
+Regards,<br>
+Sarah Graves
+                        </span>
+                    </div>
+
+                    <div class="flex mt-9">
+                        <div class="border px-5 py-3 flex rounded mx-3">
+                            <div></div>
+                            <div><span>Seminar Reports.pdf 678Kb<br><a href="" class="text-blue-600 underline px-2">View </a> <a href="" class="text-blue-600 underline"> Download</a></span></div>
+
+                        </div>
+                        <div class="border px-5 py-3 flex rounded">
+                            <div></div>
+                            <div><span>Seminar Reports.pdf 678Kb<br><a href="" class="text-blue-600 underline px-2">View </a> <a href="" class="text-blue-600 underline"> Download</a></span></div>
+
+                        </div>
+
+                    </div>
+                     
+            </div>
+            <!-- /third -->
+            <br>
+           
+          
+           </div>
+
+       </section>
+      
+
+    </main>
+   
+    
+
+
+    <footer class="max-w-screen-xl w-full lg:float-right px-10 border-t py-6">
+        
+
+
+        
+        
+        <div class=" flex fixed justify-center items-center bottom-12 right-14  w-12 h-12 rounded-full bg-blue-900 text-white p-3 ">
+            <iconify-icon icon="ant-design:setting-outlined" class="compose text-xl animate-spin"></iconify-icon>
+        </div>
+        
+    </footer>
+
+   
+
+      <!-- <script src="./js/jquery.js"></script> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+      <script src="./js/script.js"></script>
+</body>
+</html>

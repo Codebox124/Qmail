@@ -1,0 +1,27 @@
+.size{
+    font-size:10rem !important;
+}
+.bg-mail{
+    background-color:#e6e9ed;
+}
+.compose-btn{
+    background-color: #4B49AC;
+}
+.but:hover{
+    background-color:#ccdbee !important;
+}
+.bgg{
+    background-color: rgba(37, 36, 36, 0.747);
+}
+
+.animate{
+    animation: slide ease .8s;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(-40rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

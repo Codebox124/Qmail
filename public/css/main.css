@@ -1,0 +1,148 @@
+
+/* Header style start */
+
+/* .con_tainer {
+    width: 1200px;
+    max-width: 100%;
+  } */
+  /* .con_tainer {
+    width: 1200px;
+    max-width: calc(100% - 10px);
+    margin: 0 auto;
+    padding: 0 10px;
+  } */
+.header_side{
+    position: absolute;
+    top: 56px;
+    left: -10px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 200px;
+    height: 100vh;
+    scroll-behavior: auto;
+    transform:  translate(0px);
+    transition: all .5s ease-in-out;
+}
+
+.header_side {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.header_side::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.header_side.close{
+    transform:  translate(1000px);
+
+}
+/* Header style end*/
+
+
+
+/* widget style start */
+.update_circle{
+    top: 6px;
+    left: -22px;
+}
+.update_circle1{
+    top: 2px;
+    left: -22px;
+
+}
+
+/* widget style end */
+
+
+
+/* portfolio style start */
+
+.image_hover{
+    transform: translateY(400px);
+    transition: transform .5S ease-in-out;
+}
+
+
+.image_hover_box:hover .image_hover {
+    transform: translateY(0px);
+
+}
+
+.image_hover_box .image_text_animate_hover{
+     transform: translateY(-8px);
+     transition:  transform .5s ease-in-out;
+}
+
+.image_hover_box:hover .image_text_animate_hover{
+    transform: translateY(-100px);
+}
+
+
+
+.image_hover_box .image_animate_hover{
+    transform: scaleX(1) ;
+    transition:  transform .5s ease-in-out;
+}
+
+.image_hover_box:hover .image_animate_hover{
+    transform: scaleY(1.5)  scaleZ(-2);
+    
+
+} 
+
+/* portfolio style end */
+
+
+
+@media screen and (min-width: 1024px){
+
+    .header_side{
+        left: -10px;
+    }
+
+
+    .main_container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+    }
+    .side_menu{
+        position: absolute;
+        top: 0;
+        width: 20%;
+        height: 100vh;
+        align-self: flex-start;
+        justify-self: self-start;
+
+    }
+    .header_side.close{
+        transform:  translate(-100px);
+    }
+
+    .header_side.close .list{
+        flex-direction: row-reverse;
+        margin-bottom: 5px;
+    }
+
+    .header_side.close .list:hover  .list_icon.edit_icon {
+        color: #fff;
+    }
+    
+    .list_icon.edit_icon{
+        color: #000;
+    }
+
+    .list_link.remove_link{
+        display: none;  
+    }
+
+}
+
+.drop{
+    
+    padding: 8px  12.960px ;
+    
+
+}
